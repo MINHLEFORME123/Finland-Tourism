@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>Ice Hotel Ultimate Stay – Visit Finland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<link href="assets/tour-pro.css" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: { "primary": "#2b8cee", "background-light": "#f6f7f8", "background-dark": "#101922" },
+        fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+      },
+    },
+  }
+</script>
+</head>
+<body class="bg-background-light font-display text-slate-900">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+  <header class="flex items-center justify-between border-b border-primary/10 bg-white/90 backdrop-blur-md px-6 md:px-10 py-4 sticky top-0 z-50">
+    <a href="index.html" class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-3xl">ac_unit</span><h2 class="text-slate-900 text-xl font-bold">Visit Finland</h2></a>
+    <a href="tours.html" class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm">Back to Packages</a>
+  </header>
+
+  <main class="pro-shell flex-1">
+    <section class="pro-hero" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfTY_66d6GZSxFWFgDNpWk0njeHDfLBu9Bz9gDIAxMXZPLGpRzdCDEcEuH3cWJmAHHw2Iq5huh7T79-JZE1AW-bI6oU4uy--uOTnUlSFqSQKGtTZD-IxgODg_xS7Lzx2AP07-sXcslmNHrFl9jgvGP4uPHArGU93KggeSndDDTFKGYfVbs58IAsN8_Ed-D4SaJ9b4taqPvX953Dmtz_6kneMet6UelsYxBWrnw6zyQj11sGvgjKnYnQLLRv1cJSrJaltxMtIjvqlE');">
+      <div class="pro-hero-content">
+        <div class="pro-chip-row"><span class="pro-chip">Luxury</span><span class="pro-chip">6 Days</span><span class="pro-chip">SnowCastle Suite</span><span class="pro-chip">Icebreaker Cruise</span></div>
+        <h1 class="text-4xl md:text-6xl font-extrabold">Ice Hotel Ultimate Stay</h1>
+        <p class="text-white/90 text-lg mt-4 max-w-2xl">A high-end arctic product with luxury suite booking, cruise options, and advanced quote tools for premium travelers.</p>
+      </div>
+    </section>
+
+    <section class="pro-grid">
+      <div class="pro-panel" data-card>
+        <h2 class="text-2xl font-extrabold">Luxury Product Story</h2>
+        <p class="pro-muted mt-2">Curated as a luxury commerce experience: strong value narrative, conversion blocks, and full cost projection.</p>
+        <div class="pro-kpi">
+          <div><strong>4.9/5</strong><span>Luxury guest score</span></div>
+          <div><strong>92%</strong><span>Suite occupancy rate</span></div>
+          <div><strong>Concierge</strong><span>Dedicated host</span></div>
+          <div><strong>€3,200</strong><span>Base package</span></div>
+        </div>
+        <div class="pro-itinerary">
+          <article class="pro-day"><small>Day 1</small><strong>VIP Arrival in Kemi</strong><p class="pro-muted">Private transfer and champagne check-in.</p></article>
+          <article class="pro-day"><small>Day 2</small><strong>SnowCastle Signature Stay</strong><p class="pro-muted">Ice suite experience with curated tasting menu.</p></article>
+          <article class="pro-day"><small>Day 3</small><strong>Sampo Icebreaker Cruise</strong><p class="pro-muted">Premium deck access and arctic sea immersion.</p></article>
+          <article class="pro-day"><small>Day 4-6</small><strong>Wellness + Aurora Evenings</strong><p class="pro-muted">Private sauna, photographer, and farewell gala.</p></article>
+        </div>
+        <h3 class="text-xl font-extrabold mt-6">Client Feedback</h3>
+        <div class="pro-reviews">
+          <div class="pro-review"><strong>Yuri, UAE</strong>Perfectly premium. The quote builder matched the actual billing structure very closely.</div>
+          <div class="pro-review"><strong>Helena, Sweden</strong>Incredible page flow and clear purchase path from browsing to checkout.</div>
+          <div class="pro-review"><strong>Quang, Vietnam</strong>Great for planning business-class trips and premium add-ons transparently.</div>
+        </div>
+      </div>
+
+      <aside class="pro-panel pro-booking" data-tour-calculator data-card>
+        <h3 class="text-xl font-extrabold">Luxury Quote Studio</h3>
+        <p class="pro-muted mt-1">Configure flights, suite class, extras, and instant total.</p>
+        <div class="pro-form-grid">
+          <label>Departure City<input name="fromCity" placeholder="e.g. Dubai" value="Dubai"/></label>
+          <label>Departure Region<select name="originRegion"><option value="middle-east" selected>Middle East</option><option value="vn">Vietnam</option><option value="sea">Southeast Asia</option><option value="east-asia">East Asia</option><option value="europe">Europe</option><option value="north-america">North America</option><option value="oceania">Oceania</option><option value="other">Other</option></select></label>
+          <label>Travel Season<select name="travelSeason"><option value="low">Low</option><option value="shoulder">Shoulder</option><option value="peak" selected>Peak</option><option value="holiday">Holiday</option></select></label>
+          <label>Ticket Class<select name="ticketClass"><option value="economy">Economy</option><option value="premium">Premium Economy</option><option value="business" selected>Business</option></select></label>
+          <label>Adults<input min="1" name="adults" type="number" value="2"/></label>
+          <label>Children<input min="0" name="children" type="number" value="0"/></label>
+          <label>Stay Tier<select name="hotelLevel"><option value="comfort">Comfort</option><option value="premium">Premium</option><option value="luxury" selected>Luxury</option></select></label>
+          <label>Promo Code<input name="promo" placeholder="VIP15" value="VIP15"/></label>
+          <div><label>Add-ons</label><div class="pro-addons">
+            <label class="pro-addon"><span>Helicopter Scenic Transfer</span><input data-label="Helicopter Scenic Transfer" name="addon" type="checkbox" value="280"/></label>
+            <label class="pro-addon"><span>Private Butler Service</span><input data-label="Private Butler Service" name="addon" type="checkbox" value="230"/></label>
+            <label class="pro-addon"><span>Michelin Dinner Upgrade</span><input data-label="Michelin Dinner Upgrade" name="addon" type="checkbox" value="190"/></label>
+            <label class="pro-addon"><span>Travel Insurance</span><input name="insurance" type="checkbox" value="1"/></label>
+          </div></div>
+        </div>
+        <div class="pro-totals">
+          <div class="pro-row"><span>Route</span><strong data-out="route">-</strong></div>
+          <div class="pro-row"><span>Tour Package</span><strong data-out="tour">€0</strong></div>
+          <div class="pro-row"><span>Estimated Flights</span><strong data-out="flight">€0</strong></div>
+          <div class="pro-row"><span>Add-ons</span><strong data-out="addon">€0</strong></div>
+          <div class="pro-row"><span>Insurance</span><strong data-out="insurance">€0</strong></div>
+          <div class="pro-row"><span>Taxes</span><strong data-out="tax">€0</strong></div>
+          <div class="pro-row"><span>Service Fees</span><strong data-out="service">€0</strong></div>
+          <div class="pro-row"><span>Discount</span><strong data-out="discount">- €0</strong></div>
+          <div class="pro-total"><span>Total Estimate</span><span data-out="total">€0</span></div>
+          <div class="pro-row"><span>Deposit Due Now (30%)</span><strong data-out="deposit">€0</strong></div>
+        </div>
+        <button class="pro-btn" data-action="checkout" type="button">Proceed to Checkout</button>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="mt-8 border-t border-slate-200 py-8 bg-white"><div class="max-w-[1200px] mx-auto px-6 text-sm text-slate-500">© 2024 Visit Finland - Luxury Collection</div></footer>
+</div>
+<script>window.TOUR_DATA = { name: 'Ice Hotel Ultimate Stay', destination: 'Kemi', basePrice: 3200, nights: 6 };</script>
+<script defer src="assets/site.js"></script>
+<script defer src="assets/tour-pro.js"></script>
+</body>
+</html>

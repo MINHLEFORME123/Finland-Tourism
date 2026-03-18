@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>Destinations – Visit Finland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#2b8cee",
+          "background-light": "#f6f7f8",
+          "background-dark": "#101922",
+        },
+        fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+        borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="bg-background-light text-slate-900 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+  <!-- Navigation -->
+  <header class="flex items-center justify-between whitespace-nowrap border-b border-primary/10 bg-white/90 backdrop-blur-md px-6 md:px-20 py-4 sticky top-0 z-50">
+    <div class="flex items-center gap-8">
+      <a href="index.html" class="flex items-center gap-3 text-primary">
+        <span class="material-symbols-outlined text-3xl">ac_unit</span>
+        <h2 class="text-slate-900 text-xl font-extrabold leading-tight tracking-tight">Visit Finland</h2>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="index.html">Home</a>
+        <a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="destinations.html">Destinations</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="activities.html">Activities</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="plan.html">Plan</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="tours.html">Tours</a>
+      </nav>
+    </div>
+    <div class="flex flex-1 justify-end gap-4 items-center">
+      <div class="hidden sm:flex items-center bg-primary/5 rounded-xl px-4 h-10 border border-primary/10">
+        <span class="material-symbols-outlined text-primary/60 text-xl">search</span>
+        <input class="bg-transparent border-none focus:ring-0 text-sm w-32 md:w-44 placeholder:text-slate-400 pl-2" placeholder="Find your arctic escape"/>
+      </div>
+      <a href="tours.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-primary/20 transition-all">
+        Book Now
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl mx-auto w-full px-6 md:px-10 py-10">
+
+    <!-- Page Header -->
+    <div class="mb-12">
+      <nav class="flex items-center gap-2 mb-4 text-primary/60 text-sm font-medium">
+        <a class="hover:text-primary" href="index.html">Home</a>
+        <span class="material-symbols-outlined text-sm">chevron_right</span>
+        <span class="text-slate-900">Destinations</span>
+      </nav>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="max-w-2xl">
+          <h1 class="text-slate-900 text-5xl font-black leading-tight tracking-tight mb-4">
+            Finland's Winter <span class="text-primary">Wonderland</span>
+          </h1>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            From the dancing Northern Lights in Lapland to the cozy festive markets of the south, discover the magic of the Finnish winter season.
+          </p>
+        </div>
+        <div class="flex gap-2">
+          <button class="bg-primary text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+            <span class="material-symbols-outlined">map</span> View Interactive Map
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Chips -->
+    <div class="flex gap-3 pb-8 overflow-x-auto">
+      <button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl bg-primary text-white px-5 font-semibold text-sm">
+        <span class="material-symbols-outlined text-lg">explore</span> All Regions
+      </button>
+      <button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl bg-white border border-primary/10 px-5 font-semibold text-sm hover:bg-primary/5 transition-colors">
+        <span class="material-symbols-outlined text-lg">ac_unit</span> Lapland
+      </button>
+      <button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl bg-white border border-primary/10 px-5 font-semibold text-sm hover:bg-primary/5 transition-colors">
+        <span class="material-symbols-outlined text-lg">skateboarding</span> Ski Resorts
+      </button>
+      <button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl bg-white border border-primary/10 px-5 font-semibold text-sm hover:bg-primary/5 transition-colors">
+        <span class="material-symbols-outlined text-lg">storefront</span> Winter Markets
+      </button>
+      <button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl bg-white border border-primary/10 px-5 font-semibold text-sm hover:bg-primary/5 transition-colors">
+        <span class="material-symbols-outlined text-lg">waves</span> Coastal Cities
+      </button>
+    </div>
+
+    <!-- Destination Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Rovaniemi -->
+      <div class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+        <div class="relative h-64 overflow-hidden">
+          <img alt="Santa Claus Village Rovaniemi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg_iL8ZlnBk1hkfuizSWG9O3FddGKNv7fs6TIEW4idJ2nnmIMqw3dowjBty_UectiRdBpJC7lcmIx6Lic7_SS-k4cnJnfO5yck9f-EJ2kq7xz2RfPpBo4864V_DRn7AUWw1PVfCYiBNH_pU7GB_d2JpCmy0MYrHDJYFlDLlOGmSofigXGRAmFY0mJIl5VGdsn61Ip3TKDrDRj18FM-z0UIYF2K_LHzHsz6kD4qkGCBFVBLyCZiR4Sv8s9Golj8c30zhRrCf2xZUcg"/>
+          <div class="absolute top-4 left-4">
+            <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary flex items-center gap-1">
+              <span class="material-symbols-outlined text-xs">star</span> Top Pick
+            </span>
+          </div>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <div class="flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Lapland</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">Rovaniemi</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">The Official Hometown of Santa Claus. Experience reindeer rides, meet the man himself, and cross the Arctic Circle.</p>
+          <div class="mt-auto flex items-center justify-between">
+            <span class="text-primary font-bold text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">flare</span> Magic Spot
+            </span>
+            <a href="tours.html" class="text-slate-900 hover:text-primary transition-colors">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kemi -->
+      <div class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+        <div class="relative h-64 overflow-hidden">
+          <img alt="SnowCastle Kemi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKSQjPI9jRsEhpyHXFZKeh6HSV45tKnIPviDucBfgrNshUy3NqRP6wKrCeoBHmls19EY5shRjAkrLGNp9we2erRsAojP6WXDt3AJYMpDBRXB1iBzmTPg_QI2U8zM2ZfbYnONHZRdySN7tsAAb0QgshuWNe9-eFPh5KO-X4bNr_gfkSCRjpvx3ksPxip3jra6ebZ1Dwm8o2DGc6wPV8Q-GdrhiwKwa-n7I9sX-QUxOROOICXZ4ymQfDjpo-ZGM37HLZ5RfV4GdkegU"/>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <div class="flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Coastal Lapland</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">Kemi</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">Home to the spectacular SnowCastle and the Sampo Icebreaker. Walk on frozen sea and dine in an ice restaurant.</p>
+          <div class="mt-auto flex items-center justify-between">
+            <span class="text-primary font-bold text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">icecream</span> Ice Sculptures
+            </span>
+            <a href="tours.html" class="text-slate-900 hover:text-primary transition-colors">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Levi -->
+      <div class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+        <div class="relative h-64 overflow-hidden">
+          <img alt="Skiing in Levi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg-PpnhOzIXtkGeWZ3vzOPQFZxHoISUBm42f2OpdH_JspbhtSmccOAxcqXCk1FjRXrIeJIOorWp4TPYH-dBNoDDBBDQjBZJ7QCOrPLogWEXcqvSnT7QMqgZnWr1SQ2fu0SWasfj4pmh9a_HV4DulAZOX63f3Ttv29xEUaf-_c25RC_or0pHgbuxe5KYxj0Ic_OHWWH-op25eadrSNQ79XUv0wDyiJLVokT4CN3-6ihK4XDAJ-4wtL8cDfaIe3UPSbbqTRGNO4zBcA"/>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <div class="flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Fell Lapland</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">Levi</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">Finland's most popular ski resort. Alpine charm, world-class slopes, and vibrant après-ski under the Aurora Borealis.</p>
+          <div class="mt-auto flex items-center justify-between">
+            <span class="text-primary font-bold text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">downhill_skiing</span> Top Slopes
+            </span>
+            <a href="tours.html" class="text-slate-900 hover:text-primary transition-colors">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Helsinki -->
+      <div class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+        <div class="relative h-64 overflow-hidden">
+          <img alt="Helsinki Christmas Market" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh-P2LvaDlpWxnHx8L4hwzexCuXZ6rEMBHT9llwUOR0F5MZ4qn3XyYhp4vj3Ts3RRJUdkgA3ynBoWeuxJ2NgDBvr16ZOcLYDS7Gn5_MhG2MZ0rkoqGiv34O8MQOizwHYXDJ3mNv_rqcuLya_rx72RpQg9wlP-tpmIx3D72nZRvw4Ia7w1KAzfxmEoZ12eH9yn9qrpZTdbu5iCK9I8_mi6at1FairvJoc0_fnMqVhHtN8fSDjYUJ2_nmdXmBxYEEEc5ysGHuhNjs9Y"/>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <div class="flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="text-xs font-bold uppercase tracking-widest">South Coast</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">Helsinki</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">Experience the Tuomaan Markkinat market. Cozy cafes, design district shopping, and warm traditional saunas.</p>
+          <div class="mt-auto flex items-center justify-between">
+            <span class="text-primary font-bold text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">hot_tub</span> Sauna Culture
+            </span>
+            <a href="tours.html" class="text-slate-900 hover:text-primary transition-colors">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saariselkä -->
+      <div class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+        <div class="relative h-64 overflow-hidden">
+          <img alt="Saariselkä Arctic Wilderness" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYbcguZ5jE2L_oA0o1wNDS_-D3LQxyOSMMhEH5KMKD9T-WXe774dlnS_6fdqVRrQISPAk0QFTvxMKT86XsgTLACW7aGapkAjxKOdvVRMCPZSBqnwS9dxJZKc2E7eNHLkK13B7Wu9lOvl8DsRX-uMxpNYEa2vS_vw6k7vKb4lIROhqfEBMEczTvbgn5KpDDasO-3Ly2sIGaZCCFyW3sVkjI0QSBukGWq9o9PdBvaMfCxZPKErgyv7HovucEFUZGMGKujW0ddJJtIaA"/>
+          <div class="absolute top-4 left-4">
+            <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary flex items-center gap-1">
+              <span class="material-symbols-outlined text-xs">auto_awesome</span> Aurora Spot
+            </span>
+          </div>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <div class="flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Arctic Lapland</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">Saariselkä</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">Remote Arctic wilderness with glass igloos perfect for watching the Northern Lights from your warm bed.</p>
+          <div class="mt-auto flex items-center justify-between">
+            <span class="text-primary font-bold text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">nights_stay</span> Northern Lights
+            </span>
+            <a href="tours.html" class="text-slate-900 hover:text-primary transition-colors">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oulu -->
+      <div class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+        <div class="relative h-64 overflow-hidden">
+          <img alt="Oulu winter cityscape" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVLhIypKXlQa-c7w_S1FxHg6M9agiyXUoo3YzwT8El5_QYQYTiXh5qAu8bxwsWzVFbG8N2qavlBZ_WeUP_L4OLRa9SNfq8ObMJCdQTzBkrBYUKAfuUHE8LEonKaNWZy-v4GtGk8CaadFMSxPcS1QYoJW5EdouDYRJ16FoKKeDm-AWQE_KoBosjQKmkGQRl_Vh9QZ73ujB5spLBIo6aKzFePnmtPR785Vd1sWsp1TEsPybmCsxWZjzKBSIDb7n6mTEDLJi4zDmT_yk"/>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <div class="flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Northern Coast</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">Oulu</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">A vibrant northern coastal city famous for its cycling culture, Christmas markets, and stunning frozen sea views.</p>
+          <div class="mt-auto flex items-center justify-between">
+            <span class="text-primary font-bold text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">storefront</span> Winter Markets
+            </span>
+            <a href="tours.html" class="text-slate-900 hover:text-primary transition-colors">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Turku -->
+      <div class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+        <div class="relative h-64 overflow-hidden">
+          <img alt="Turku Christmas Market" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCye68MN96wDdEkmPKlj18M28Ae-xBWM86VYsuphpS5GDa5xdcsAKV4ni8T0Cl-_sf6jdrJ9l7U5_WlofiPoX5MZy4PyaScTpoZTpClbYATPlI2OI-1Heg2ylUnQ4Re00ssBCzdcNlVmL2y6egkYn-RoLgikQ5AMXmEPC3067Z98mYa6kAVVCrITgFilTxQG9A9Xyv1wVD1S2G9xFgQ0hqVd0EGbRIqmQ2ZBQb0wJJXU5ZObnpAEaZjdygBQXV_tjshgc6PRUEkH-Y"/>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <div class="flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Southwest</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">Turku</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">Finland's original capital and cultural heart. Historic castle, festive markets, and the gateway to the archipelago.</p>
+          <div class="mt-auto flex items-center justify-between">
+            <span class="text-primary font-bold text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">castle</span> Historic City
+            </span>
+            <a href="tours.html" class="text-slate-900 hover:text-primary transition-colors">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tampere -->
+      <div class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+        <div class="relative h-64 overflow-hidden">
+          <img alt="Tampere winter view" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoc2HVHJ6t2QgufyGL8QgKr3Z1D2JMYodavgvCzaIjob1EiUVOEDnHjMI9U4YwXvRWp3LyFJ0serLPXoMY43UMLUIBYpHpwom_yh4XKlyze-lF1BxclTaNWGRrAioe4IQf6ewcDIXif1Pcu5DAEilqfcZtSHle8Dt9A0UgkgCZLzuuNl_UrpRvG_Y40Hkt5raaOFsSBv3M2ovii3DsuOq1Kfx-7TJqkq_t2LnhnlUyUdhJPNNB1uswuVNZ-mcKbnkQxtnlxyQTsJs"/>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <div class="flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Lake District</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-3">Tampere</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">The sauna capital of the world! Industrial chic city sat between two lakes with frozen lake walks and cozy breweries.</p>
+          <div class="mt-auto flex items-center justify-between">
+            <span class="text-primary font-bold text-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">hot_tub</span> Sauna Capital
+            </span>
+            <a href="tours.html" class="text-slate-900 hover:text-primary transition-colors">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Interactive Map Section -->
+    <div class="mt-16 bg-primary/5 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 border border-primary/10">
+      <div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-2xl relative">
+        <img alt="Finland Map Illustration" class="w-full h-[400px] object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL5EoehzxzBisWtdXybh9yxFloPd5VP0jriuAiFZ1_6-NAQ1x5hZIr1Pj1T0oiWRwq2bKW2PRzImJylu7YeSRPthIR2Yi79JgZLIaGdWAN6N1KYDI8hABjxBi5muoh41WEdUf4nKQszegW6P3w3mM6Jm7aq6ml8DBamahHT379-zHsAnKes-fTBav8ePJ2c8Lkh1hBQpHZyV98a9uHvYQa7j-aSB33w3VCUZ0Vyfck7nTrC3_LjOfx658xoDvAYpe4i4E19N6dYuM"/>
+        <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+        <div class="absolute top-[20%] right-[45%] bg-white p-1 rounded-full shadow-lg border-2 border-primary">
+          <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+        </div>
+        <div class="absolute top-[40%] right-[50%] bg-white p-1 rounded-full shadow-lg border-2 border-primary">
+          <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+        </div>
+        <div class="absolute bottom-[20%] right-[30%] bg-white p-1 rounded-full shadow-lg border-2 border-primary">
+          <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 space-y-6">
+        <div class="bg-primary/20 text-primary w-12 h-12 rounded-xl flex items-center justify-center">
+          <span class="material-symbols-outlined">map</span>
+        </div>
+        <h2 class="text-3xl font-black text-slate-900">Plan Your Arctic Route</h2>
+        <p class="text-slate-600 text-lg leading-relaxed">
+          Use our interactive route planner to see distances between major winter spots. Discover hidden husky farms and aurora-viewing glass igloos along the way.
+        </p>
+        <div class="grid grid-cols-2 gap-4 pt-4">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary">directions_car</span>
+            <span class="text-sm font-semibold">Scenic Drives</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary">train</span>
+            <span class="text-sm font-semibold">VR Night Train</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary">flight</span>
+            <span class="text-sm font-semibold">Arctic Flights</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary">hotel</span>
+            <span class="text-sm font-semibold">Igloo Stays</span>
+          </div>
+        </div>
+        <a href="plan.html" class="inline-block mt-4 border-2 border-primary text-primary px-8 py-3 rounded-xl font-bold hover:bg-primary hover:text-white transition-all">
+          Start Planning
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-primary/10 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <a href="index.html" class="flex items-center gap-3 text-primary">
+          <span class="material-symbols-outlined text-3xl">ac_unit</span>
+          <h2 class="text-slate-900 text-xl font-extrabold tracking-tight">Visit Finland</h2>
+        </a>
+        <div class="flex gap-8 text-slate-500 text-sm font-medium">
+          <a class="hover:text-primary" href="plan.html">Safety Guide</a>
+          <a class="hover:text-primary" href="plan.html">Best Time to Visit</a>
+          <a class="hover:text-primary" href="plan.html">Packing List</a>
+          <a class="hover:text-primary" href="#">Contact</a>
+        </div>
+        <div class="flex gap-4">
+          <div class="size-10 rounded-full bg-primary/5 flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
+            <span class="material-symbols-outlined">share</span>
+          </div>
+          <div class="size-10 rounded-full bg-primary/5 flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
+            <span class="material-symbols-outlined">mail</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-primary/5 text-center text-slate-400 text-xs">
+        © 2024 Visit Finland. All rights reserved. No reindeer were harmed in the making of this site.
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script defer src="assets/site.js"></script>
+</body>
+</html>

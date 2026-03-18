@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>Visit Finland – Winter Wonderland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#2b8cee",
+          "background-light": "#f6f7f8",
+          "background-dark": "#101922",
+          "accent-soft": "#e0f2fe",
+          "cozy-white": "#ffffff",
+        },
+        fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+        borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .snow-bg { background-image: radial-gradient(circle at 2px 2px, rgba(43,140,238,0.04) 1px, transparent 0); background-size: 40px 40px; }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 snow-bg">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+  <!-- Navigation -->
+  <header class="flex items-center justify-between whitespace-nowrap border-b border-primary/10 bg-white/90 backdrop-blur-md px-6 md:px-20 py-4 sticky top-0 z-50">
+    <div class="flex items-center gap-8">
+      <a href="index.html" class="flex items-center gap-3 text-primary">
+        <span class="material-symbols-outlined text-3xl">ac_unit</span>
+        <h2 class="text-slate-900 text-xl font-extrabold leading-tight tracking-tight">Visit Finland</h2>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="index.html">Home</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="destinations.html">Destinations</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="activities.html">Activities</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="plan.html">Plan</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="tours.html">Tours</a>
+      </nav>
+    </div>
+    <div class="flex flex-1 justify-end gap-4 items-center">
+      <div class="hidden sm:flex items-center bg-primary/5 rounded-full px-4 py-2 border border-primary/10">
+        <span class="material-symbols-outlined text-primary text-xl">search</span>
+        <input class="bg-transparent border-none focus:ring-0 text-sm w-32 md:w-44 placeholder:text-slate-400" placeholder="Search Finland..."/>
+      </div>
+      <a href="tours.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-primary/20 transition-all">
+        Book Now
+      </a>
+    </div>
+  </header>
+
+  <main class="flex flex-col flex-1">
+
+    <!-- Hero Section -->
+    <section class="p-4 md:p-8">
+      <div class="relative min-h-[560px] rounded-3xl overflow-hidden flex items-center justify-center text-center p-6 bg-cover bg-center"
+        style='background-image: linear-gradient(rgba(15,23,42,0.45), rgba(15,23,42,0.65)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkzfPUdAnXNlGpG3aTfEFe8kEUz45V978G3WfVar57t97Cx8D00bbEg5TMX0VFDpHOcSOOXL8nYL1HorL2rV_hedeMja3u3qpM664hfFxK6a5CaFN38_bGuJtxhwaiF2XvDPe2SeuQp7KzuSjXD6Vw0yX7rCFy-0hBqdihltlyXa9luyuGJ5GAU_ePnYL6h7RkSc6Q57JKbPh_CWJWK4qGrbRGz6ABFIlvNiceTzjEtyyx4ZKcqenah7K_ePj4kBMMExAL2aDZnTw"); background-size: cover; background-position: center;'>
+        <div class="max-w-3xl flex flex-col gap-6 items-center">
+          <div class="bg-white/20 backdrop-blur-md border border-white/30 px-5 py-1.5 rounded-full text-white text-xs font-bold uppercase tracking-widest">
+            Winter Wonderland 2024
+          </div>
+          <h1 class="text-white text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
+            Experience the Magic of <span class="text-blue-300">Finland</span>
+          </h1>
+          <p class="text-white/90 text-lg md:text-xl max-w-xl font-medium leading-relaxed">
+            Discover the aurora borealis dancing over snowy forests and sleep in cozy glass igloos under the Arctic sky.
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center mt-4">
+            <a href="destinations.html" class="bg-white text-primary px-8 py-4 rounded-full font-extrabold text-base shadow-xl hover:scale-105 transition-transform flex items-center gap-2">
+              <span class="material-symbols-outlined">explore</span> Explore Now
+            </a>
+            <a href="tours.html" class="bg-primary/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-extrabold text-base hover:bg-primary/40 transition-all">
+              View Packages
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="px-6 md:px-20 py-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-primary/5">
+          <p class="text-3xl font-extrabold text-primary">188k</p>
+          <p class="text-slate-500 text-sm mt-1">Lakes in Finland</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-primary/5">
+          <p class="text-3xl font-extrabold text-primary">200+</p>
+          <p class="text-slate-500 text-sm mt-1">Days of Snow Per Year</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-primary/5">
+          <p class="text-3xl font-extrabold text-primary">-30°C</p>
+          <p class="text-slate-500 text-sm mt-1">Arctic Temperatures</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-primary/5">
+          <p class="text-3xl font-extrabold text-primary">#1</p>
+          <p class="text-slate-500 text-sm mt-1">Happiest Country</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Winter Activities -->
+    <section class="px-6 md:px-20 py-12">
+      <div class="flex items-end justify-between mb-10">
+        <div>
+          <span class="text-primary font-bold text-sm uppercase tracking-widest mb-2 block">Our Favorites</span>
+          <h2 class="text-slate-900 text-3xl md:text-4xl font-extrabold tracking-tight">Top Winter Activities</h2>
+        </div>
+        <a class="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="activities.html">View all <span class="material-symbols-outlined">chevron_right</span></a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Activity 1 -->
+        <a href="activities.html" class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-3xl aspect-[4/5] mb-4">
+            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDp1kis0ube2bjbvYw5YSeJi8cb0h3nA-1trIpUZWFesaAQ6NDpq-IO3BXGVFxRrE25peHs-aaSlj5jCSW9ZR3m8kui-M6FFunM7J2qApju4mBo3waPm9UmdtVHphwe8i_VLwe_YLglV6ywvF8njZcL_-1mhvl63a5J6nq3VxDboNEPzKDGEfWEr_YqJqezr2ft6nHOOPpooG1xRCL63qT0x6dUFw9ZO_AULB3KcrOCcnA_EVFiFUsYBX4ZbR91D2-xt78QE0scfYU");'></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <div class="bg-primary/80 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center mb-2">
+                <span class="material-symbols-outlined text-white">pets</span>
+              </div>
+              <h3 class="text-xl font-bold">Husky Sledding</h3>
+              <p class="text-white/80 text-sm">Dash through the pristine snow</p>
+            </div>
+          </div>
+        </a>
+        <!-- Activity 2 -->
+        <a href="activities.html" class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-3xl aspect-[4/5] mb-4">
+            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPWV8N4uZchaEae4WDp5vGhBZTNcbsGcHDKNFXGfTyTjuWS_Uarm_kLO2VZScnsOuW764JV2ZnjBKC26jJnhLWImMGGDEF0A_kBYvR7bOhGRBGhbPmVsk0y4jNi7bxZCUVp-29Ya0gAa3EJ0AVGzfe7a2xf0eqcPcdK8v6Os97iTRluO97OoeU9CoYhM7EnPVGqTa8Ps5FdzRKj3xdrjCb2koRL1rVonzuNLKbskwYG2XP929Hh7qYMk0-4jGV6MRAM2DZ7BySHA0");'></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <div class="bg-primary/80 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center mb-2">
+                <span class="material-symbols-outlined text-white">auto_awesome</span>
+              </div>
+              <h3 class="text-xl font-bold">Northern Lights Tours</h3>
+              <p class="text-white/80 text-sm">Chase the celestial cosmic lights</p>
+            </div>
+          </div>
+        </a>
+        <!-- Activity 3 -->
+        <a href="activities.html" class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-3xl aspect-[4/5] mb-4">
+            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCye68MN96wDdEkmPKlj18M28Ae-xBWM86VYsuphpS5GDa5xdcsAKV4ni8T0Cl-_sf6jdrJ9l7U5_WlofiPoX5MZy4PyaScTpoZTpClbYATPlI2OI-1Heg2ylUnQ4Re00ssBCzdcNlVmL2y6egkYn-RoLgikQ5AMXmEPC3067Z98mYa6kAVVCrITgFilTxQG9A9Xyv1wVD1S2G9xFgQ0hqVd0EGbRIqmQ2ZBQb0wJJXU5ZObnpAEaZjdygBQXV_tjshgc6PRUEkH-Y");'></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <div class="bg-primary/80 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center mb-2">
+                <span class="material-symbols-outlined text-white">holiday_village</span>
+              </div>
+              <h3 class="text-xl font-bold">Santa's Village</h3>
+              <p class="text-white/80 text-sm">Meet Father Christmas himself</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="bg-primary/5 py-16 px-6 md:px-20">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-slate-900 text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Featured Destinations</h2>
+          <p class="text-slate-600 max-w-xl mx-auto">From the vibrant capital to the arctic circle, discover the best of Finland's winter magic.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Rovaniemi -->
+          <div class="bg-white p-4 rounded-3xl border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
+            <div class="rounded-2xl overflow-hidden h-48 mb-4">
+              <img class="w-full h-full object-cover" alt="Rovaniemi snowy city landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEGP08ttFYUrSXAzVVW5aTJs3DN_rGx_apN4JQimZy5aDLlLmoe7NLSRjU9-bazz6PwpHni6WdzQtkKFVimFQzVLYECU28Xp77R2oZZw1mStiXU-rZ7WYWkb3Uh4KCEDq5LbeUzcFv-o0DQKSuAlhGVp3yGBLZkrdOTyqUmOhuf4HNsvyn38GiHksIK1QYKU4rkU9bmth5X7Vgj4blAiLekj58cT4_hh7s5qam7tCYDRVgL3HwmDKDmixqJr2M_qgdsWR8Qb4E5OE"/>
+            </div>
+            <div class="px-2">
+              <h4 class="text-xl font-bold mb-1">Rovaniemi</h4>
+              <p class="text-slate-500 text-sm mb-4">The official hometown of Santa Claus in the Arctic Circle.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-primary font-bold">From €899</span>
+                <a href="destinations.html" class="text-primary bg-primary/10 hover:bg-primary/20 p-2 rounded-full transition-colors">
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Levi -->
+          <div class="bg-white p-4 rounded-3xl border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
+            <div class="rounded-2xl overflow-hidden h-48 mb-4">
+              <img class="w-full h-full object-cover" alt="Ski slopes in Levi Finland" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdyaxWnwp1CotUkrpmNnwLEwzy-Ry3XIiqC5wnUrCBzsLHT6Bw98OUp6WpST4TMVYGym5k-0vojvyF5qbbpR3mQfd9Tt6gNqyyLIZCk8PeLyi5ha0B4y2_cmr-B9uirqxXtRtccvw0FEuPf8O04ile8K2nECDi7LX5LdPO_d3AuD7aNsyEyAs72BZvIrtXIMSaKL-PUNrpPBcwTC-w0XyP-tIKSO1g7TB0ZxifIhzVmJf2nK5qVTYg0vLOsdVxeYFWZ_lxfuirIPM"/>
+            </div>
+            <div class="px-2">
+              <h4 class="text-xl font-bold mb-1">Levi</h4>
+              <p class="text-slate-500 text-sm mb-4">Finland's most popular ski resort with world-class slopes.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-primary font-bold">From €1,200</span>
+                <a href="destinations.html" class="text-primary bg-primary/10 hover:bg-primary/20 p-2 rounded-full transition-colors">
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Helsinki -->
+          <div class="bg-white p-4 rounded-3xl border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
+            <div class="rounded-2xl overflow-hidden h-48 mb-4">
+              <img class="w-full h-full object-cover" alt="Helsinki cathedral in winter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA48g5oiOIiXaKWKBiiT23Yip8bZSkO9GFRS6Rub8Mb0Wh-pS6tpKZtITSrj7JaVhVkx6L288ZMbnYlTrld_5xu-7TXMqdYdIGdpBObRfUg3fFhzXl24jCgB9pka9pTsrU-Bk1bfwv11JDlxEy5e8bAyhTwsQCb4Kq1nTXi6oRcag6svcB8Dashq2DLPHwaajlzMzhfAD0pdDry6nCH7WGQFFumBNQlHnf1cTk-wzpGbenTABQTkgeXTyVVlHx5pgThvvn0xyIHSGk"/>
+            </div>
+            <div class="px-2">
+              <h4 class="text-xl font-bold mb-1">Helsinki</h4>
+              <p class="text-slate-500 text-sm mb-4">Experience city life, saunas, and coastal winter charm.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-primary font-bold">From €650</span>
+                <a href="destinations.html" class="text-primary bg-primary/10 hover:bg-primary/20 p-2 rounded-full transition-colors">
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a href="destinations.html" class="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all">
+            Explore All Destinations <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6">
+      <div class="max-w-5xl mx-auto relative rounded-[3rem] overflow-hidden bg-primary p-12 text-center text-white">
+        <div class="absolute top-8 left-8 text-white/20"><span class="material-symbols-outlined text-6xl">ac_unit</span></div>
+        <div class="absolute bottom-8 right-12 text-white/20"><span class="material-symbols-outlined text-4xl">ac_unit</span></div>
+        <div class="absolute top-1/2 right-10 text-white/10"><span class="material-symbols-outlined text-8xl">star_rate</span></div>
+        <div class="relative z-10">
+          <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Start Your Adventure</h2>
+          <p class="text-xl text-blue-50 mb-10 max-w-2xl mx-auto">Plan your perfect winter getaway today. We'll help you find the best cabins, activities, and secret spots.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="plan.html" class="bg-white text-primary px-10 py-4 rounded-full font-extrabold text-lg shadow-xl shadow-blue-900/20 hover:scale-105 transition-transform">
+              Plan My Trip
+            </a>
+            <a href="tours.html" class="bg-blue-600 text-white px-10 py-4 rounded-full font-extrabold text-lg border border-white/20 hover:bg-blue-700 transition-colors">
+              View Packages
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-primary/10 px-6 md:px-20 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <div class="flex items-center gap-3 text-primary mb-6">
+          <span class="material-symbols-outlined text-3xl">ac_unit</span>
+          <h2 class="text-slate-900 text-xl font-extrabold">Visit Finland</h2>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">Your ultimate guide to experiencing the magic and wonder of Finland's arctic adventures.</p>
+      </div>
+      <div>
+        <h5 class="font-bold mb-6 text-slate-900 uppercase text-xs tracking-widest">Explore</h5>
+        <ul class="space-y-4 text-sm text-slate-600">
+          <li><a class="hover:text-primary transition-colors" href="destinations.html">Destinations</a></li>
+          <li><a class="hover:text-primary transition-colors" href="activities.html">Activities</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Aurora Alerts</a></li>
+          <li><a class="hover:text-primary transition-colors" href="plan.html">Travel Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold mb-6 text-slate-900 uppercase text-xs tracking-widest">Company</h5>
+        <ul class="space-y-4 text-sm text-slate-600">
+          <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Partners</a></li>
+          <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold mb-6 text-slate-900 uppercase text-xs tracking-widest">Connect</h5>
+        <div class="flex gap-4 mb-6">
+          <a class="bg-primary/10 p-2.5 rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#">
+            <span class="material-symbols-outlined text-lg">public</span>
+          </a>
+          <a class="bg-primary/10 p-2.5 rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#">
+            <span class="material-symbols-outlined text-lg">alternate_email</span>
+          </a>
+          <a class="bg-primary/10 p-2.5 rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#">
+            <span class="material-symbols-outlined text-lg">call</span>
+          </a>
+        </div>
+        <p class="text-xs text-slate-400">© 2024 Visit Finland. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-primary/5 text-center">
+      <p class="text-xs text-slate-400 flex items-center justify-center gap-1">
+        Made with <span class="material-symbols-outlined text-xs text-red-400">favorite</span> for snowy dreams.
+      </p>
+    </div>
+  </footer>
+
+</div>
+<script defer src="assets/site.js"></script>
+</body>
+</html>

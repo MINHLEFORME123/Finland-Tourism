@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>Package Tours – Visit Finland</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="assets/site.css" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#2b8cee",
+          "background-light": "#f6f7f8",
+          "background-dark": "#101922",
+        },
+        fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+        borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="bg-background-light font-display text-slate-900">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+
+  <!-- Navigation -->
+  <header class="flex items-center justify-between whitespace-nowrap border-b border-primary/10 bg-white/90 backdrop-blur-md px-6 md:px-10 py-4 sticky top-0 z-50">
+    <div class="flex items-center gap-8">
+      <a href="index.html" class="flex items-center gap-2 text-primary">
+        <span class="material-symbols-outlined text-3xl">ac_unit</span>
+        <h2 class="text-slate-900 text-xl font-bold leading-tight tracking-tight">Visit Finland</h2>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-slate-700 text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-slate-700 text-sm font-semibold hover:text-primary transition-colors" href="destinations.html">Destinations</a>
+        <a class="text-slate-700 text-sm font-semibold hover:text-primary transition-colors" href="activities.html">Activities</a>
+        <a class="text-slate-700 text-sm font-semibold hover:text-primary transition-colors" href="plan.html">Plan</a>
+        <a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="tours.html">Tours</a>
+      </nav>
+    </div>
+    <div class="flex flex-1 justify-end gap-4 items-center">
+      <label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64">
+        <div class="flex w-full flex-1 items-stretch rounded-xl h-full bg-slate-100">
+          <div class="text-slate-500 flex items-center justify-center pl-4">
+            <span class="material-symbols-outlined text-xl">search</span>
+          </div>
+          <input class="form-input flex w-full min-w-0 flex-1 border-none bg-transparent focus:ring-0 text-sm placeholder:text-slate-500 pl-2" placeholder="Search packages..."/>
+        </div>
+      </label>
+      <button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-primary/20 transition-all">
+        Book Now
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-8">
+
+    <!-- Hero Section -->
+    <div class="flex flex-wrap justify-between items-end gap-6 mb-10">
+      <div class="flex flex-col gap-3 max-w-2xl">
+        <nav class="flex items-center gap-2 text-primary/60 text-sm font-medium">
+          <a class="hover:text-primary" href="index.html">Home</a>
+          <span class="material-symbols-outlined text-sm">chevron_right</span>
+          <span class="text-slate-900 font-semibold">Package Tours</span>
+        </nav>
+        <h1 class="text-slate-900 text-5xl font-extrabold leading-tight tracking-tight">Package Tours</h1>
+        <p class="text-slate-600 text-lg">Experience the magic of Finland with our hand-picked, all-inclusive winter escapes. From aurora hunting to reindeer sleigh rides.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <button class="flex items-center justify-center rounded-xl h-12 px-6 bg-primary/10 text-primary text-sm font-bold hover:bg-primary/20 transition-all">
+          View All Offers
+        </button>
+        <a href="orders.html" class="flex items-center justify-center rounded-xl h-12 px-6 bg-white border border-primary/20 text-primary text-sm font-bold hover:bg-primary/5 transition-all">
+          My Orders
+        </a>
+      </div>
+    </div>
+
+    <!-- Filters Section -->
+    <div class="flex flex-wrap gap-3 mb-8">
+      <button class="flex h-10 items-center justify-center gap-x-2 rounded-xl bg-white border border-slate-200 px-4 shadow-sm hover:border-primary transition-colors">
+        <span class="text-slate-700 text-sm font-medium">Duration</span>
+        <span class="material-symbols-outlined text-slate-400 text-lg">expand_more</span>
+      </button>
+      <button class="flex h-10 items-center justify-center gap-x-2 rounded-xl bg-white border border-slate-200 px-4 shadow-sm hover:border-primary transition-colors">
+        <span class="text-slate-700 text-sm font-medium">Budget</span>
+        <span class="material-symbols-outlined text-slate-400 text-lg">expand_more</span>
+      </button>
+      <button class="flex h-10 items-center justify-center gap-x-2 rounded-xl bg-white border border-slate-200 px-4 shadow-sm hover:border-primary transition-colors">
+        <span class="text-slate-700 text-sm font-medium">Tour Type</span>
+        <span class="material-symbols-outlined text-slate-400 text-lg">expand_more</span>
+      </button>
+      <button class="flex h-10 items-center justify-center gap-x-2 rounded-xl bg-white border border-slate-200 px-4 shadow-sm hover:border-primary transition-colors">
+        <span class="text-slate-700 text-sm font-medium">Rating</span>
+        <span class="material-symbols-outlined text-slate-400 text-lg">expand_more</span>
+      </button>
+      <button class="flex h-10 items-center justify-center gap-x-2 rounded-xl bg-white border border-slate-200 px-4 shadow-sm hover:border-primary transition-colors">
+        <span class="text-slate-700 text-sm font-medium">Destination</span>
+        <span class="material-symbols-outlined text-slate-400 text-lg">expand_more</span>
+      </button>
+    </div>
+
+    <!-- Tour Grid -->
+    <div class="grid grid-cols-1 gap-8">
+
+      <!-- Tour Card 1 -->
+      <div class="group flex flex-col md:flex-row items-stretch rounded-xl overflow-hidden shadow-md bg-white border border-slate-100 hover:shadow-xl transition-shadow">
+        <div class="w-full md:w-1/3 bg-center bg-no-repeat aspect-video md:aspect-auto bg-cover relative"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCq-cYpjwl-chmOFTXtdq6iiiA9KWr8sETDhEj2a9pljQUFQ2ekctQmVVwbPyGNguX-JFXsvqZ-MERDf_9UCCy3Zx-o-ew4x_gQ7o8aizNXfnJr7Xq8jexf7d_4IA_i_2rUm-Dtwb7vlDduTq9RE0AO4fEr4QG5ccNh5hWoznSI6G8EQFsZZaDtDlon0IzDPWwVdVrBp0nR40xGa8rGj5uD3hWG8HuhUBgv3Lj0LlztCJpQ2NhBHyAX5v_FYnmGCeYobv_xO1XObRk");'>
+          <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Best Seller</div>
+        </div>
+        <div class="flex flex-1 flex-col justify-between p-6 md:p-8">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-slate-900 text-2xl font-bold">7-Day Arctic Adventure</h3>
+              <div class="flex items-center gap-1 text-amber-500">
+                <span class="material-symbols-outlined text-lg">star</span>
+                <span class="text-sm font-bold">4.9</span>
+              </div>
+            </div>
+            <p class="text-primary font-bold text-lg mb-4">From €2,499 <span class="text-slate-400 text-sm font-normal">/ person</span></p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2 mb-6">
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">schedule</span>
+                <span class="text-sm">7 Days</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">restaurant</span>
+                <span class="text-sm">Full Board</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">airport_shuttle</span>
+                <span class="text-sm">Transfers Incl.</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">location_on</span>
+                <span class="text-sm">Rovaniemi & Lapland</span>
+              </div>
+            </div>
+            <p class="text-slate-600 mb-6">The ultimate Lapland experience featuring husky sledding, traditional ice fishing, and nightly Aurora hunts led by professional photographers.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Husky Safari</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Ice Fishing</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Photography Tour</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Aurora Hunting</span>
+            </div>
+          </div>
+          <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-between">
+            <div class="flex items-center gap-4 text-sm text-slate-500">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-green-500">check_circle</span> Flexible cancellation</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">support_agent</span> 24/7 support</span>
+            </div>
+            <a href="tour-arctic-adventure.html" class="flex items-center justify-center rounded-xl h-11 px-8 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+              View Details
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour Card 2 -->
+      <div class="group flex flex-col md:flex-row items-stretch rounded-xl overflow-hidden shadow-md bg-white border border-slate-100 hover:shadow-xl transition-shadow">
+        <div class="w-full md:w-1/3 bg-center bg-no-repeat aspect-video md:aspect-auto bg-cover relative"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuLDeLrmhpIC0LNtCt9MdlY66kdu_3X4REmDexJWwXz9iZKHEWSlw0MNfqVXacC6K7RyTc-KFbRPk6UwTXTJpUYRb8o7Az8kZdntiwFdAJ7MApLZKz-CRnbT2tC2SUX7lrx0KDijq-IRual7lPqc98Z2AF325xQsBZlOvDuKnnP9r8eY7X-vCv1Zj1f88wAbyO9i-sg7NWHmmzFjZj8SUTd2H5t5fi3IAe2UrDxCg2PbWspVtSbQml0CUGO5A20xoQaclre8Tcl4g");'>
+          <div class="absolute top-4 left-4 bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Popular</div>
+        </div>
+        <div class="flex flex-1 flex-col justify-between p-6 md:p-8">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-slate-900 text-2xl font-bold">Romantic Aurora Escape</h3>
+              <div class="flex items-center gap-1 text-amber-500">
+                <span class="material-symbols-outlined text-lg">star</span>
+                <span class="text-sm font-bold">5.0</span>
+              </div>
+            </div>
+            <p class="text-primary font-bold text-lg mb-4">From €1,899 <span class="text-slate-400 text-sm font-normal">/ person</span></p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2 mb-6">
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">schedule</span>
+                <span class="text-sm">5 Days</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">hotel</span>
+                <span class="text-sm">Glass Igloo</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">spa</span>
+                <span class="text-sm">Private Sauna</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">location_on</span>
+                <span class="text-sm">Saariselkä</span>
+              </div>
+            </div>
+            <p class="text-slate-600 mb-6">Stay in a luxury glass igloo and fall asleep under the dancing Northern Lights. Includes private dinners and a relaxing wellness package.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Aurora Viewing</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Champagne Breakfast</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Candlelight Dinner</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Couples Spa</span>
+            </div>
+          </div>
+          <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-between">
+            <div class="flex items-center gap-4 text-sm text-slate-500">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-green-500">check_circle</span> Flexible cancellation</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">support_agent</span> 24/7 support</span>
+            </div>
+            <a href="tour-romantic-aurora.html" class="flex items-center justify-center rounded-xl h-11 px-8 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+              View Details
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour Card 3 -->
+      <div class="group flex flex-col md:flex-row items-stretch rounded-xl overflow-hidden shadow-md bg-white border border-slate-100 hover:shadow-xl transition-shadow">
+        <div class="w-full md:w-1/3 bg-center bg-no-repeat aspect-video md:aspect-auto bg-cover relative"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBT6ioeGgUs3g6E2tnA03WaYnlfH1E3IoqNQgdyMih7o0mqDVwwpwAtWT4wNstPG4127LRw6ciEuEM3a7-oSXhVQwKcvirJvwpCzZhgq1bmoAoB-vKUbRiCF5HPDm949D92Yo9ntIIoGY4iOH9U-nHbN7xohLnVNjFd6_ndlT8LcV_Re0ybrGAj2flUrcC5FzKt1uWMJXJqwNHvdtZuvubFS5Ng1IF3J3wWVbOMFSRQ_XlcrRtFo-JnYtnNGSTW1wbqngwjpuP-xNE");'>
+        </div>
+        <div class="flex flex-1 flex-col justify-between p-6 md:p-8">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-slate-900 text-2xl font-bold">Family Santa Village Tour</h3>
+              <div class="flex items-center gap-1 text-amber-500">
+                <span class="material-symbols-outlined text-lg">star</span>
+                <span class="text-sm font-bold">4.8</span>
+              </div>
+            </div>
+            <p class="text-primary font-bold text-lg mb-4">From €1,550 <span class="text-slate-400 text-sm font-normal">/ person</span></p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2 mb-6">
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">schedule</span>
+                <span class="text-sm">4 Days</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">family_restroom</span>
+                <span class="text-sm">Kids Activities</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">celebration</span>
+                <span class="text-sm">Gift Included</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">location_on</span>
+                <span class="text-sm">Rovaniemi</span>
+              </div>
+            </div>
+            <p class="text-slate-600 mb-6">A magical journey for the little ones to meet Santa in Rovaniemi. Includes reindeer farm visits, gingerbread baking, and Arctic Circle crossing ceremony.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Reindeer Sleigh</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Elf School</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Arctic Circle</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Meet Santa</span>
+            </div>
+          </div>
+          <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-between">
+            <div class="flex items-center gap-4 text-sm text-slate-500">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-green-500">check_circle</span> Flexible cancellation</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">support_agent</span> 24/7 support</span>
+            </div>
+            <a href="tour-family-santa.html" class="flex items-center justify-center rounded-xl h-11 px-8 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+              View Details
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour Card 4 -->
+      <div class="group flex flex-col md:flex-row items-stretch rounded-xl overflow-hidden shadow-md bg-white border border-slate-100 hover:shadow-xl transition-shadow">
+        <div class="w-full md:w-1/3 bg-center bg-no-repeat aspect-video md:aspect-auto bg-cover relative"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfTY_66d6GZSxFWFgDNpWk0njeHDfLBu9Bz9gDIAxMXZPLGpRzdCDEcEuH3cWJmAHHw2Iq5huh7T79-JZE1AW-bI6oU4uy--uOTnUlSFqSQKGtTZD-IxgODg_xS7Lzx2AP07-sXcslmNHrFl9jgvGP4uPHArGU93KggeSndDDTFKGYfVbs58IAsN8_Ed-D4SaJ9b4taqPvX953Dmtz_6kneMet6UelsYxBWrnw6zyQj11sGvgjKnYnQLLRv1cJSrJaltxMtIjvqlE");'>
+          <div class="absolute top-4 left-4 bg-violet-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Luxury</div>
+        </div>
+        <div class="flex flex-1 flex-col justify-between p-6 md:p-8">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-slate-900 text-2xl font-bold">Ice Hotel Ultimate Stay</h3>
+              <div class="flex items-center gap-1 text-amber-500">
+                <span class="material-symbols-outlined text-lg">star</span>
+                <span class="text-sm font-bold">4.9</span>
+              </div>
+            </div>
+            <p class="text-primary font-bold text-lg mb-4">From €3,200 <span class="text-slate-400 text-sm font-normal">/ person</span></p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2 mb-6">
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">schedule</span>
+                <span class="text-sm">6 Days</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">hotel</span>
+                <span class="text-sm">Ice Suite</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">restaurant</span>
+                <span class="text-sm">Fine Dining</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-600">
+                <span class="material-symbols-outlined text-lg">location_on</span>
+                <span class="text-sm">Kemi</span>
+              </div>
+            </div>
+            <p class="text-slate-600 mb-6">Stay in Kemi's famous SnowCastle and icebreaker cruise. Sleep in an ice-sculpted room, dine in the ice restaurant, and cruise on the Arctic sea with the Sampo icebreaker.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Ice Room</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Icebreaker Cruise</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Snow Castle</span>
+              <span class="bg-slate-100 px-3 py-1 rounded-lg text-xs font-medium text-slate-600">Arctic Plunge</span>
+            </div>
+          </div>
+          <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-between">
+            <div class="flex items-center gap-4 text-sm text-slate-500">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-green-500">check_circle</span> Flexible cancellation</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">support_agent</span> 24/7 support</span>
+            </div>
+            <a href="tour-ice-hotel.html" class="flex items-center justify-center rounded-xl h-11 px-8 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+              View Details
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Newsletter CTA -->
+    <div class="mt-16 bg-primary/5 rounded-3xl p-8 md:p-12 flex flex-col items-center text-center gap-6 border border-primary/10">
+      <span class="material-symbols-outlined text-5xl text-primary">mail</span>
+      <div class="max-w-xl">
+        <h2 class="text-3xl font-bold mb-2">Join our Winter Newsletter</h2>
+        <p class="text-slate-600">Get early bird discounts and first dibs on our limited Aurora season packages.</p>
+      </div>
+      <form class="flex flex-col sm:flex-row gap-3 w-full max-w-md" onsubmit="return false;">
+        <input class="flex-1 rounded-xl border-slate-200 bg-white focus:ring-primary focus:border-primary text-sm px-4 py-3" placeholder="Enter your email" type="email"/>
+        <button class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-primary/90 transition-all" type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Why Book With Us -->
+    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white rounded-2xl p-6 text-center border border-primary/5 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-3 block">verified</span>
+        <h4 class="font-bold text-sm mb-1">Best Price Guarantee</h4>
+        <p class="text-xs text-slate-500">We match any price you find elsewhere.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center border border-primary/5 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-3 block">support_agent</span>
+        <h4 class="font-bold text-sm mb-1">24/7 Support</h4>
+        <p class="text-xs text-slate-500">Our Finnish experts are always available.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center border border-primary/5 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-3 block">event_available</span>
+        <h4 class="font-bold text-sm mb-1">Free Cancellation</h4>
+        <p class="text-xs text-slate-500">Cancel up to 30 days before travel.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center border border-primary/5 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-3 block">thumb_up</span>
+        <h4 class="font-bold text-sm mb-1">10,000+ Happy Travelers</h4>
+        <p class="text-xs text-slate-500">Rated 4.9/5 stars by our guests.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 border-t border-slate-200 py-10 bg-white">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+      <a href="index.html" class="flex items-center gap-2 text-primary">
+        <span class="material-symbols-outlined text-2xl">ac_unit</span>
+        <span class="text-slate-900 font-bold">Visit Finland</span>
+      </a>
+      <div class="flex flex-wrap justify-center gap-8">
+        <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="destinations.html">Destinations</a>
+        <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="activities.html">Activities</a>
+        <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="plan.html">Plan Your Trip</a>
+        <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+        <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Terms of Service</a>
+      </div>
+      <div class="flex gap-4">
+        <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer transition-colors">public</span>
+        <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer transition-colors">alternate_email</span>
+        <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer transition-colors">share</span>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-slate-400 text-xs">
+      © 2024 Visit Finland. All rights reserved.
+    </div>
+  </footer>
+
+</div>
+<script defer src="assets/site.js"></script>
+</body>
+</html>

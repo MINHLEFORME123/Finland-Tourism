@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>My Orders – Visit Finland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<link href="assets/commerce.css" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#2b8cee", "background-light": "#f6f7f8", "background-dark": "#101922" }, fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] } } } }
+</script>
+</head>
+<body class="bg-background-light font-display text-slate-900">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+  <header class="flex items-center justify-between whitespace-nowrap border-b border-primary/10 bg-white/90 backdrop-blur-md px-6 md:px-10 py-4 sticky top-0 z-50">
+    <a href="index.html" class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-3xl">ac_unit</span><h2 class="text-slate-900 text-xl font-bold">Visit Finland</h2></a>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a class="text-slate-600 hover:text-primary" href="tours.html">Tours</a>
+      <a class="text-slate-600 hover:text-primary" href="checkout.html">Checkout</a>
+      <a class="text-primary font-bold" href="orders.html">My Orders</a>
+    </nav>
+  </header>
+  <main class="commerce-wrap flex-1" data-orders-root></main>
+  <footer class="mt-8 border-t border-slate-200 py-8 bg-white"><div class="max-w-[1200px] mx-auto px-6 text-sm text-slate-500">© 2024 Visit Finland - Orders</div></footer>
+</div>
+<script defer src="assets/site.js"></script>
+<script defer src="assets/commerce.js"></script>
+</body>
+</html>

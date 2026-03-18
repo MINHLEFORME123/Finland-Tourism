@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>Family Santa Village Tour – Visit Finland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<link href="assets/tour-pro.css" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: { "primary": "#2b8cee", "background-light": "#f6f7f8", "background-dark": "#101922" },
+        fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+      },
+    },
+  }
+</script>
+</head>
+<body class="bg-background-light font-display text-slate-900">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+  <header class="flex items-center justify-between border-b border-primary/10 bg-white/90 backdrop-blur-md px-6 md:px-10 py-4 sticky top-0 z-50">
+    <a href="index.html" class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-3xl">ac_unit</span><h2 class="text-slate-900 text-xl font-bold">Visit Finland</h2></a>
+    <a href="tours.html" class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm">Back to Packages</a>
+  </header>
+
+  <main class="pro-shell flex-1">
+    <section class="pro-hero" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBT6ioeGgUs3g6E2tnA03WaYnlfH1E3IoqNQgdyMih7o0mqDVwwpwAtWT4wNstPG4127LRw6ciEuEM3a7-oSXhVQwKcvirJvwpCzZhgq1bmoAoB-vKUbRiCF5HPDm949D92Yo9ntIIoGY4iOH9U-nHbN7xohLnVNjFd6_ndlT8LcV_Re0ybrGAj2flUrcC5FzKt1uWMJXJqwNHvdtZuvubFS5Ng1IF3J3wWVbOMFSRQ_XlcrRtFo-JnYtnNGSTW1wbqngwjpuP-xNE');">
+      <div class="pro-hero-content">
+        <div class="pro-chip-row"><span class="pro-chip">Family Favorite</span><span class="pro-chip">4 Days</span><span class="pro-chip">Kids Activities</span><span class="pro-chip">Gift Included</span></div>
+        <h1 class="text-4xl md:text-6xl font-extrabold">Family Santa Village Tour</h1>
+        <p class="text-white/90 text-lg mt-4 max-w-2xl">A complete family itinerary with Santa Village, reindeer rides, elf workshops, and budget planning tools built for parents.</p>
+      </div>
+    </section>
+
+    <section class="pro-grid">
+      <div class="pro-panel" data-card>
+        <h2 class="text-2xl font-extrabold">Family Experience</h2>
+        <p class="pro-muted mt-2">Built like a commerce family product page: child-friendly upsells, clear final total, and instant deposit preview.</p>
+        <div class="pro-kpi">
+          <div><strong>4.8/5</strong><span>Family rating</span></div>
+          <div><strong>96%</strong><span>Kids satisfaction</span></div>
+          <div><strong>2h</strong><span>Avg support response</span></div>
+          <div><strong>€1,550</strong><span>Base package</span></div>
+        </div>
+        <div class="pro-itinerary">
+          <article class="pro-day"><small>Day 1</small><strong>Check-in & Santa Parade</strong><p class="pro-muted">Airport transfer, welcome kit, and evening festive parade.</p></article>
+          <article class="pro-day"><small>Day 2</small><strong>Santa Village + Elf School</strong><p class="pro-muted">Meet Santa, letter workshop, and kids badge ceremony.</p></article>
+          <article class="pro-day"><small>Day 3</small><strong>Reindeer Farm Adventure</strong><p class="pro-muted">Safe sleigh route and warm berry drink for all ages.</p></article>
+          <article class="pro-day"><small>Day 4</small><strong>Arctic Circle Ceremony</strong><p class="pro-muted">Family photos, souvenir pickup, and departure support.</p></article>
+        </div>
+        <h3 class="text-xl font-extrabold mt-6">Parent Reviews</h3>
+        <div class="pro-reviews">
+          <div class="pro-review"><strong>Trang, Vietnam</strong>Great setup for children. Budget calculator made planning simple for our whole family.</div>
+          <div class="pro-review"><strong>Mika, Finland</strong>Very structured page and transparent costs. No hidden fees in final billing.</div>
+          <div class="pro-review"><strong>Joao, Portugal</strong>Kids had the best time. Add-ons were useful and clearly explained before checkout.</div>
+        </div>
+      </div>
+
+      <aside class="pro-panel pro-booking" data-tour-calculator data-card>
+        <h3 class="text-xl font-extrabold">Family Budget Builder</h3>
+        <p class="pro-muted mt-1">Estimate flights + package + children extras in real time.</p>
+        <div class="pro-form-grid">
+          <label>Departure City<input name="fromCity" placeholder="e.g. Da Nang" value="Da Nang"/></label>
+          <label>Departure Region<select name="originRegion"><option value="vn">Vietnam</option><option value="sea">Southeast Asia</option><option value="east-asia">East Asia</option><option value="middle-east">Middle East</option><option value="europe">Europe</option><option value="north-america">North America</option><option value="oceania">Oceania</option><option value="other">Other</option></select></label>
+          <label>Travel Season<select name="travelSeason"><option value="low">Low</option><option value="shoulder" selected>Shoulder</option><option value="peak">Peak</option><option value="holiday">Holiday</option></select></label>
+          <label>Ticket Class<select name="ticketClass"><option value="economy" selected>Economy</option><option value="premium">Premium Economy</option><option value="business">Business</option></select></label>
+          <label>Adults<input min="1" name="adults" type="number" value="2"/></label>
+          <label>Children<input min="0" name="children" type="number" value="2"/></label>
+          <label>Stay Tier<select name="hotelLevel"><option value="comfort" selected>Comfort</option><option value="premium">Premium</option><option value="luxury">Luxury</option></select></label>
+          <label>Promo Code<input name="promo" placeholder="FAMILY5" value="FAMILY5"/></label>
+          <div><label>Add-ons</label><div class="pro-addons">
+            <label class="pro-addon"><span>Kids Snow Park Access</span><input data-label="Kids Snow Park Access" name="addon" type="checkbox" value="40"/></label>
+            <label class="pro-addon"><span>Family Photo Album</span><input data-label="Family Photo Album" name="addon" type="checkbox" value="55"/></label>
+            <label class="pro-addon"><span>VIP Fast Track with Santa</span><input data-label="VIP Fast Track with Santa" name="addon" type="checkbox" value="75"/></label>
+            <label class="pro-addon"><span>Travel Insurance</span><input name="insurance" type="checkbox" value="1"/></label>
+          </div></div>
+        </div>
+        <div class="pro-totals">
+          <div class="pro-row"><span>Route</span><strong data-out="route">-</strong></div>
+          <div class="pro-row"><span>Tour Package</span><strong data-out="tour">€0</strong></div>
+          <div class="pro-row"><span>Estimated Flights</span><strong data-out="flight">€0</strong></div>
+          <div class="pro-row"><span>Add-ons</span><strong data-out="addon">€0</strong></div>
+          <div class="pro-row"><span>Insurance</span><strong data-out="insurance">€0</strong></div>
+          <div class="pro-row"><span>Taxes</span><strong data-out="tax">€0</strong></div>
+          <div class="pro-row"><span>Service Fees</span><strong data-out="service">€0</strong></div>
+          <div class="pro-row"><span>Discount</span><strong data-out="discount">- €0</strong></div>
+          <div class="pro-total"><span>Total Estimate</span><span data-out="total">€0</span></div>
+          <div class="pro-row"><span>Deposit Due Now (30%)</span><strong data-out="deposit">€0</strong></div>
+        </div>
+        <button class="pro-btn" data-action="checkout" type="button">Proceed to Checkout</button>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="mt-8 border-t border-slate-200 py-8 bg-white"><div class="max-w-[1200px] mx-auto px-6 text-sm text-slate-500">© 2024 Visit Finland - Family Collection</div></footer>
+</div>
+<script>window.TOUR_DATA = { name: 'Family Santa Village Tour', destination: 'Rovaniemi', basePrice: 1550, nights: 4 };</script>
+<script defer src="assets/site.js"></script>
+<script defer src="assets/tour-pro.js"></script>
+</body>
+</html>

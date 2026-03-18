@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="same-origin" name="view-transition"/>
+<title>Plan Your Trip – Visit Finland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#2b8cee",
+          "background-light": "#f6f7f8",
+          "background-dark": "#101922",
+        },
+        fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+        borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="bg-background-light font-display text-slate-900">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+  <!-- Navigation -->
+  <header class="flex items-center justify-between whitespace-nowrap border-b border-primary/10 bg-white/90 backdrop-blur-md px-6 md:px-20 py-4 sticky top-0 z-50">
+    <div class="flex items-center gap-8">
+      <a href="index.html" class="flex items-center gap-3 text-primary">
+        <span class="material-symbols-outlined text-3xl">ac_unit</span>
+        <h2 class="text-slate-900 text-xl font-extrabold leading-tight tracking-tight">Visit Finland</h2>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="index.html">Home</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="destinations.html">Destinations</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="activities.html">Activities</a>
+        <a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="plan.html">Plan</a>
+        <a class="text-slate-600 hover:text-primary transition-colors text-sm font-semibold" href="tours.html">Tours</a>
+      </nav>
+    </div>
+    <div class="flex flex-1 justify-end gap-4 items-center">
+      <div class="hidden sm:flex items-center bg-primary/5 rounded-full px-4 py-2 border border-primary/10">
+        <span class="material-symbols-outlined text-primary text-xl">search</span>
+        <input class="bg-transparent border-none focus:ring-0 text-sm w-32 md:w-44 placeholder:text-slate-400" placeholder="Search Finland..."/>
+      </div>
+      <a href="tours.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-primary/20 transition-all">
+        Book Now
+      </a>
+    </div>
+  </header>
+
+  <main class="flex flex-col flex-1 px-4 lg:px-40 py-8 max-w-7xl mx-auto w-full">
+
+    <!-- Hero Banner -->
+    <section class="mb-12">
+      <div class="relative flex flex-col justify-end overflow-hidden bg-slate-200 rounded-2xl min-h-[400px] lg:min-h-[500px]"
+        style='background-image: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAoc2HVHJ6t2QgufyGL8QgKr3Z1D2JMYodavgvCzaIjob1EiUVOEDnHjMI9U4YwXvRWp3LyFJ0serLPXoMY43UMLUIBYpHpwom_yh4XKlyze-lF1BxclTaNWGRrAioe4IQf6ewcDIXif1Pcu5DAEilqfcZtSHle8Dt9A0UgkgCZLzuuNl_UrpRvG_Y40Hkt5raaOFsSBv3M2ovii3DsuOq1Kfx-7TJqkq_t2LnhnlUyUdhJPNNB1uswuVNZ-mcKbnkQxtnlxyQTsJs"); background-size: cover; background-position: center;'>
+        <div class="p-8 lg:p-12">
+          <span class="inline-block px-3 py-1 bg-primary text-white text-xs font-bold rounded-full mb-4 uppercase tracking-wider">Winter 2024 Guide</span>
+          <h1 class="text-white text-4xl lg:text-6xl font-bold leading-tight max-w-2xl">Plan Your Magical Winter Adventure</h1>
+          <p class="text-slate-200 mt-4 text-lg max-w-xl">Everything you need to know about visiting the land of snow, silence, and the Northern Lights.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- When to Visit -->
+    <section class="mb-16">
+      <div class="flex items-baseline justify-between mb-8">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight">When to Visit</h2>
+          <p class="text-slate-500 mt-2">Discover the unique seasons of the Finnish winter.</p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-xl border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+          <div class="size-12 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 mb-6">
+            <span class="material-symbols-outlined text-3xl">dark_mode</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">The Polar Night (Kaamos)</h3>
+          <p class="text-slate-600 leading-relaxed mb-4">
+            From December to mid-January, the sun doesn't rise above the horizon. Instead, experience a magical "blue hour" where the snow reflects soft, ethereal light. It's the coziest time for log cabins and candles.
+          </p>
+          <span class="text-indigo-600 font-semibold flex items-center gap-2">
+            <span class="material-symbols-outlined">ac_unit</span> Best for cozy vibes
+          </span>
+        </div>
+        <div class="bg-white p-8 rounded-xl border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+          <div class="size-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+            <span class="material-symbols-outlined text-3xl">flare</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Northern Lights Season</h3>
+          <p class="text-slate-600 leading-relaxed mb-4">
+            February and March offer the clearest skies and longer daylight hours for activities. The Aurora Borealis is most active around the equinox, dancing across the dark Arctic skies in vibrant greens and purples.
+          </p>
+          <span class="text-primary font-semibold flex items-center gap-2">
+            <span class="material-symbols-outlined">auto_awesome</span> Best for Aurora spotting
+          </span>
+        </div>
+        <div class="bg-white p-8 rounded-xl border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+          <div class="size-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 mb-6">
+            <span class="material-symbols-outlined text-3xl">wb_sunny</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">March – Spring Lapland</h3>
+          <p class="text-slate-600 leading-relaxed mb-4">
+            The snow is still thick but daylight returns. Perfect for skiing, snowmobiling, and outdoor photography. Temperatures are milder, making it great for families with children.
+          </p>
+          <span class="text-amber-600 font-semibold flex items-center gap-2">
+            <span class="material-symbols-outlined">downhill_skiing</span> Best for outdoor sports
+          </span>
+        </div>
+        <div class="bg-white p-8 rounded-xl border border-primary/5 hover:border-primary/20 transition-all shadow-sm">
+          <div class="size-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-6">
+            <span class="material-symbols-outlined text-3xl">celebration</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">December – Christmas Magic</h3>
+          <p class="text-slate-600 leading-relaxed mb-4">
+            The most festive time! Santa's village is alive with activity, markets are glowing with lights, and everyone is celebrating. The ultimate holiday experience for al the family.
+          </p>
+          <span class="text-green-600 font-semibold flex items-center gap-2">
+            <span class="material-symbols-outlined">holiday_village</span> Best for families
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Get There -->
+    <section class="mb-16 bg-primary/5 rounded-xl p-8 lg:p-12 border border-primary/10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">How to Get There</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="shrink-0 size-10 rounded-full bg-primary text-white flex items-center justify-center">
+                <span class="material-symbols-outlined">flight</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Fly to Helsinki or Rovaniemi</h4>
+                <p class="text-slate-600">Main hubs with international connections. Finnair offers daily flights into the heart of Lapland.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="shrink-0 size-10 rounded-full bg-primary text-white flex items-center justify-center">
+                <span class="material-symbols-outlined">train</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">The Santa Claus Express</h4>
+                <p class="text-slate-600">A magical overnight sleeper train from Helsinki to Rovaniemi and Kemijärvi.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="shrink-0 size-10 rounded-full bg-primary text-white flex items-center justify-center">
+                <span class="material-symbols-outlined">directions_car</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Arctic Driving</h4>
+                <p class="text-slate-600">Rent a car with winter tires. Roads are well-maintained, but watch for reindeer crossings!</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="shrink-0 size-10 rounded-full bg-primary text-white flex items-center justify-center">
+                <span class="material-symbols-outlined">directions_bus</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Coach & Bus Services</h4>
+                <p class="text-slate-600">Matkahuolto operates extensive bus routes connecting all major Finnish cities at affordable prices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative rounded-xl overflow-hidden shadow-2xl h-80 lg:h-96">
+          <img class="w-full h-full object-cover" alt="Modern train moving through a snowy Finnish landscape"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVLhIypKXlQa-c7w_S1FxHg6M9agiyXUoo3YzwT8El5_QYQYTiXh5qAu8bxwsWzVFbG8N2qavlBZ_WeUP_L4OLRa9SNfq8ObMJCdQTzBkrBYUKAfuUHE8LEonKaNWZy-v4GtGk8CaadFMSxPcS1QYoJW5EdouDYRJ16FoKKeDm-AWQE_KoBosjQKmkGQRl_Vh9QZ73ujB5spLBIo6aKzFePnmtPR785Vd1sWsp1TEsPybmCsxWZjzKBSIDb7n6mTEDLJi4zDmT_yk"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packing Essentials -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-center mb-4">Winter Packing Essentials</h2>
+      <p class="text-slate-500 text-center mb-12 max-w-2xl mx-auto">Layering is key! Temperatures can drop to -30°C, but don't worry, we've got you covered with this checklist.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+          <span class="material-symbols-outlined text-4xl text-primary mb-4">checkroom</span>
+          <h4 class="font-bold">Base Layers</h4>
+          <p class="text-xs text-slate-500 mt-2">Merino wool is best for moisture-wicking.</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+          <span class="material-symbols-outlined text-4xl text-primary mb-4">dry_cleaning</span>
+          <h4 class="font-bold">Mid Layers</h4>
+          <p class="text-xs text-slate-500 mt-2">Fleece or down jackets to trap heat.</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+          <span class="material-symbols-outlined text-4xl text-primary mb-4">footprint</span>
+          <h4 class="font-bold">Wool Socks</h4>
+          <p class="text-xs text-slate-500 mt-2">Pack multiple pairs, keep feet dry!</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+          <span class="material-symbols-outlined text-4xl text-primary mb-4">hiking</span>
+          <h4 class="font-bold">Winter Boots</h4>
+          <p class="text-xs text-slate-500 mt-2">Insulated, waterproof, and good grip.</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+          <span class="material-symbols-outlined text-4xl text-primary mb-4">front_hand</span>
+          <h4 class="font-bold">Thermal Mittens</h4>
+          <p class="text-xs text-slate-500 mt-2">Mittens are warmer than gloves.</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+          <span class="material-symbols-outlined text-4xl text-primary mb-4">face_6</span>
+          <h4 class="font-bold">Beanie &amp; Scarf</h4>
+          <p class="text-xs text-slate-500 mt-2">Protect your ears and neck from wind.</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+          <span class="material-symbols-outlined text-4xl text-primary mb-4">battery_charging_full</span>
+          <h4 class="font-bold">Power Bank</h4>
+          <p class="text-xs text-slate-500 mt-2">Batteries drain fast in the cold!</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+          <span class="material-symbols-outlined text-4xl text-primary mb-4">self_care</span>
+          <h4 class="font-bold">Skin Care</h4>
+          <p class="text-xs text-slate-500 mt-2">Lip balm and fatty cream for the face.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Your Stay Form -->
+    <section class="mb-16">
+      <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-xl grid lg:grid-cols-5">
+        <div class="lg:col-span-2 p-8 lg:p-12 text-white">
+          <h2 class="text-3xl font-bold mb-4">Book Your Stay</h2>
+          <p class="text-slate-400 mb-8">From glass igloos to rustic log cabins, find your perfect Arctic home away from home.</p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">verified</span>
+              <span>Instant Confirmation</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">support_agent</span>
+              <span>24/7 Travel Assistance</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">event_available</span>
+              <span>Flexible Cancellation</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">payments</span>
+              <span>Secure Payments</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-3 bg-white p-8 lg:p-12">
+          <form action="#" class="grid md:grid-cols-2 gap-6">
+            <div class="col-span-2">
+              <label class="block text-sm font-semibold mb-2">Where to?</label>
+              <select class="w-full rounded-lg border-slate-200 py-3 focus:ring-primary focus:border-primary">
+                <option>Rovaniemi (Santa's Village)</option>
+                <option>Levi (Ski Resort)</option>
+                <option>Saariselkä (Arctic Wilderness)</option>
+                <option>Helsinki (Capital City)</option>
+                <option>Kemi (SnowCastle)</option>
+                <option>Oulu (Northern City)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Check-in</label>
+              <input class="w-full rounded-lg border-slate-200 py-3 focus:ring-primary focus:border-primary" type="date"/>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Check-out</label>
+              <input class="w-full rounded-lg border-slate-200 py-3 focus:ring-primary focus:border-primary" type="date"/>
+            </div>
+            <div class="col-span-2">
+              <label class="block text-sm font-semibold mb-2">Guests</label>
+              <div class="flex gap-4">
+                <input class="w-full rounded-lg border-slate-200 py-3 focus:ring-primary focus:border-primary" min="1" placeholder="Adults" type="number"/>
+                <input class="w-full rounded-lg border-slate-200 py-3 focus:ring-primary focus:border-primary" min="0" placeholder="Children" type="number"/>
+              </div>
+            </div>
+            <div class="col-span-2">
+              <label class="block text-sm font-semibold mb-2">Accommodation Type</label>
+              <select class="w-full rounded-lg border-slate-200 py-3 focus:ring-primary focus:border-primary">
+                <option>Glass Igloo</option>
+                <option>Log Cabin</option>
+                <option>Hotel Room</option>
+                <option>Ice Hotel</option>
+                <option>TreeHouse</option>
+              </select>
+            </div>
+            <div class="col-span-2 pt-4">
+              <button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all transform hover:-translate-y-1" type="submit">
+                Check Availability &amp; Best Prices
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Useful Info -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Useful Information</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl p-6 border border-primary/5 shadow-sm">
+          <div class="size-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined">health_and_safety</span>
+          </div>
+          <h4 class="font-bold text-lg mb-2">Travel Insurance</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">Always purchase comprehensive travel and health insurance before your trip. EU citizens can use EHIC cards.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-primary/5 shadow-sm">
+          <div class="size-10 rounded-full bg-blue-100 text-primary flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined">currency_exchange</span>
+          </div>
+          <h4 class="font-bold text-lg mb-2">Currency</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">Finland uses the Euro (€). Cards are widely accepted everywhere, even in small villages. Cash is rarely needed.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-primary/5 shadow-sm">
+          <div class="size-10 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined">language</span>
+          </div>
+          <h4 class="font-bold text-lg mb-2">Language</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">Finnish and Swedish are official languages. English is widely spoken, especially in tourist areas and cities.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-primary/10 px-6 py-12 lg:px-40">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <a href="index.html" class="flex items-center gap-4 text-primary">
+        <span class="material-symbols-outlined text-2xl">ac_unit</span>
+        <h2 class="text-slate-900 text-lg font-bold">Visit Finland</h2>
+      </a>
+      <div class="flex gap-8">
+        <a class="text-slate-500 hover:text-primary text-sm" href="destinations.html">Destinations</a>
+        <a class="text-slate-500 hover:text-primary text-sm" href="activities.html">Activities</a>
+        <a class="text-slate-500 hover:text-primary text-sm" href="tours.html">Tours</a>
+        <a class="text-slate-500 hover:text-primary text-sm" href="#">Contact</a>
+      </div>
+      <p class="text-slate-500 text-sm">© 2024 Visit Finland. Welcome to the North.</p>
+    </div>
+  </footer>
+
+</div>
+<script defer src="assets/site.js"></script>
+</body>
+</html>
